@@ -6,7 +6,8 @@ while True:
     print("\nStudy Productivity Tracker")
     print("1. Add entry")
     print("2. View entries")
-    print("3. Exit")
+    print("3. Show summary")
+    print("4. Exit")
 
     option = input("Enter option: ")
 
@@ -22,4 +23,7 @@ while True:
         tracker.view_entries(file_name)
 
     elif option == "3":
+        tracker.show_summary(file_name)
+
+    elif option == "4":
         break
