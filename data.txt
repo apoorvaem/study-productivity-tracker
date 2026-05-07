@@ -6,3 +6,4 @@ Walking | 0.3 hour(s) | medium | 4/5
 csc 110 | 2 hour(s) | low | 4/5
 art | 5 hour(s) | medium | 4/5
 art | 2 hour(s) | low | 3/5
+fssds | 3.33333 hour(s) | low | 2/5
