@@ -6,8 +6,10 @@ while True:
     print("\nStudy Productivity Tracker")
     print("1. Add entry")
     print("2. View entries")
-    print("3. Show summary")
-    print("4. Exit")
+    print("3. Search entries")
+    print("4. Delete entry")
+    print("5. Show summary")
+    print("6. Exit")
 
     option = input("Enter option: ")
 
@@ -47,7 +49,15 @@ while True:
         tracker.view_entries(file_name)
 
     elif option == "3":
-        tracker.show_summary(file_name)
+        keyword = input("Enter keyword to search: ")
+        tracker.search_entries(file_name, keyword)
 
     elif option == "4":
+        keyword = input("Enter keyword to delete: ")
+        tracker.delete_entry(file_name, keyword)
+
+    elif option == "5":
+        tracker.show_summary(file_name)
+
+    elif option == "6":
         break
